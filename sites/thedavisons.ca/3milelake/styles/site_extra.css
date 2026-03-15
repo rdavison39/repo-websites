@@ -1,0 +1,92 @@
+﻿.table1 {
+	font-family: Verdana,Helvitica,sans-serif;
+	font-size: 10pt;
+	height: 19px;
+}
+.listingTitre {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	color: #FD8902;
+	font-weight: bold;
+	padding-bottom: 7px;
+}
+.listingAmenitiesHead {
+	font-weight: bold;
+	color: #666666;
+	font-style: italic;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #CCCCCC;
+	background-color: #F2F2F2;
+	padding: 10px;
+	vertical-align: top;
+	width: 175px;
+}
+.listingAmenitiesHeadEnd {
+	font-weight: bold;
+	color: #666666;
+	font-style: italic;
+	background-color: #F2F2F2;
+	padding: 10px;
+	vertical-align: top;
+}
+.listingAmenitiesValue {
+	padding: 10px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #CCCCCC;
+}
+.listingAmenitiesValueEnd {
+	padding: 10px;
+	width: 300px;
+}
+.amenityItem {
+	width: 150px;
+	height: 28px;
+}
+/* for the welcome page */
+.a1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #375780;
+	text-decoration: none;
+}
+.a2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #375780;
+	text-decoration: none;
+	line-height: 14px;
+}
+.smallFont {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 8px;
+	font-weight: bold;
+	color: #375780;
+	text-decoration: none;
+}
+body {
+	background-color: #E3EAEE;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+table.welcome {
+	border: 1px solid #B9AEA8;
+	margin-right: 60px;
+}
+td.welcome {
+	border-spacing: 33px;
+}
+/* for the inventory page */
+table.cottageInventory {
+	border: 1px solid #B9AEA8;
+	margin-right: 60px;
+}
+td.cottageInventory {
+	border-spacing: 33px;
+	border-width:medium;
+}

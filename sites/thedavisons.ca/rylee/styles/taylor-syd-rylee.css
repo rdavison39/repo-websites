@@ -1,0 +1,227 @@
+﻿body {
+	font-family: Tahoma, Helvetica, Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #044F84;
+	color: #000000;
+}
+/*===============indicates no border around any image ============*/
+body img {
+	border: 0px;
+	text-decoration: none;
+}
+/* ============ margins auto center the container on the page ==========*/
+#container {
+	margin: 10px auto 10px auto;
+	padding: 30px;
+	background-color: #ffffff;
+	width: 90%;
+	max-width: 1300px;
+}
+/*=================== styles for top banner ========================*/
+#banner {
+	background-position: left center;
+	padding: 5px;
+	background-color: #044F84;
+	background-image: url('../media/hockey_logo-full-blue.jpg');
+	height: 163px;
+	background-repeat: no-repeat;
+	color: #000000;
+}
+#banner img {
+	margin-top: 20px;
+	float: right;
+}
+/*==============all site links==============*/
+a:link {
+	font-weight: bold;
+	color: #A70622;
+	background: transparent;
+	text-decoration: underline;
+}
+a:visited {
+	font-weight: bold;
+	color: #000000;
+	background: transparent;
+	padding: 0px;
+	text-decoration: underline;
+}
+a:hover {
+	font-weight: bold;
+	text-decoration : none;
+	background: #A70622;
+	color: #ffffff;
+}
+a:active {
+	font-weight: bold;
+	text-decoration : underline;
+	background: #BFDFE2;
+	color: #000000;
+}
+/*====================== styles for main content area =========================*/
+#content {
+	margin-left: 180px;
+	padding: 5px;
+	text-align: left;
+	vertical-align: top;
+}
+/*===========content area list items==============*/
+#content ul li {
+	list-style-image: url('../images/red-diamond.png');
+	margin: 0px;
+	padding: 0px;
+}
+#content li li {
+	list-style-image: url('../images/red-diamond.png');
+	padding: 2px 0;
+}
+/* *****************************************************
+Navigation Bar - Left hand side 
+**************************************************** */
+#vertmenu {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	width: 160px;
+	padding: 0px;
+	margin: 10px 0px 0px 0px;
+	float: left;
+}
+
+
+#vertmenu ul {
+	list-style: none;
+	margin: 0px 0px 5px 0px;
+	padding: 0px;
+	border: none;
+}
+#vertmenu ul li {
+	margin: 0px;
+	padding: 0px;
+}
+#vertmenu ul li a {
+	font-size: 80%;
+	display: block;
+	border-bottom: 1px dashed #825252;
+	padding: 5px 0px 2px 4px;
+	text-decoration: none;
+	color: #000000;
+	width: 160px;
+}
+#vertmenu ul li a:hover, #vertmenu ul li a:focus {
+	background: #A2A2A2;
+	color: #000000;
+}
+.heading {
+	display: block;
+	color: #FFFFFF;
+	font-weight: bold;
+	padding: 4px;
+	background: #009DDE;
+	text-decoration: none;
+	border: 1px solid #2C5629;
+}
+ .sidebox a:link {
+	background: #FFFFFF;
+	color: #1534B3;
+	font-weight: bold;
+	text-decoration: none;
+}
+.sidebox a:visited {
+	background: #FFFFFF;
+	color: #1534B3;
+	font-weight: bold;
+	text-decoration: none;
+}
+#vertmenu .sidebox a:hover {
+	background: #FFFFFF;
+	color: #CC3300;
+	font-weight: bold;
+	text-decoration: underline;
+}
+#vertmenu .sidebox a:active {
+	background: #FFFFFF;
+	color: #1534B3;
+	font-weight: bold;
+	text-decoration: none;
+}
+/* left-hand menu - colored box - green */
+.sidebox {
+	border: #6F0D11 2px solid;
+	margin: 15px 0px 3px 0px;
+	padding: 0px 3px 15px 3px;
+	background: #ffffff;
+	color: #000000;
+	font-size: 85%;
+}
+.sideboxheading {
+	background: #009DDE;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 3px;
+	padding: 2px;
+}
+
+
+/*============== Styles for footer ===================*/
+#footer {
+	border-top: 2px solid #2A5A19;
+	clear: both;
+	padding: 5px;
+	background-color: rgb(255, 255, 255);
+	text-align: center;
+	border-top-color: #6F0D11;
+}
+#footer p {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+/*================== general styles =================*/
+hr {
+	width: 50%;
+	text-align: center;
+	background-color: #A70622;
+	height: 5px;
+}
+/* =================Styles for heading tags =============== */
+h1, h2, h3, h4 {
+	color: #000000;
+	background-color: inherit;
+}
+h1 {
+	font-size: 1.5em;
+	background: #009DDE;
+	padding: 2px;
+}
+h2 {
+	font-size: 1em;
+}
+h3 {
+	font-size: .9em;
+}
+h4 {
+	font-size: .9em;
+}
+/*================used to center anything==============*/
+.center {
+	text-align: center;
+}
+/* ============floats images to right or left ============*/
+.imgrgt {
+	float: right;
+	padding: 7px;
+}
+.imglft {
+	float: left;
+	padding: 7px;
+}
+.imglft_x {
+	float: left;
+	padding: 17px;
+}
+
+.smtxt {
+	font-size: small;
+}
+
+

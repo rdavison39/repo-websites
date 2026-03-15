@@ -1,0 +1,40 @@
+<webalbum version="1.8.2">
+  <title>basement</title>
+  <settings>
+    <photosize width="640" height="480">medium</photosize>
+    <thumbsize width="100" height="75">medium</thumbsize>
+    <outputdirectory>C:\Rons Documents\Rons Personal Stuff\Webs\www.thedavisons.ca\257_maurice\generated\basement\</outputdirectory>
+    <navigateinloop>False</navigateinloop>
+  </settings>
+  <layout>
+    <colourscheme>Default</colourscheme>
+    <pagecolor>16777215</pagecolor>
+    <textcolor>0</textcolor>
+    <linkcolor>16711680</linkcolor>
+    <hotlinkcolor>255</hotlinkcolor>
+    <thumbnailrows>9</thumbnailrows>
+    <thumbnailcols>3</thumbnailcols>
+    <navigationbelowphoto>False</navigationbelowphoto>
+  </layout>
+  <photographs>
+    <photo>
+      <filename>C:\Rons Documents\Rons Personal Stuff\257_Maurice\pictures to generate web site\basement\basement1.jpg</filename>
+      <rotation>right</rotation>
+    </photo>
+    <photo>
+      <filename>C:\Rons Documents\Rons Personal Stuff\257_Maurice\pictures to generate web site\basement\basement2.jpg</filename>
+      <rotation>right</rotation>
+    </photo>
+    <photo>
+      <filename>C:\Rons Documents\Rons Personal Stuff\257_Maurice\pictures to generate web site\basement\basement3.jpg</filename>
+      <rotation>right</rotation>
+    </photo>
+    <photo>
+      <filename>C:\Rons Documents\Rons Personal Stuff\257_Maurice\pictures to generate web site\basement\basement4.jpg</filename>
+      <rotation>right</rotation>
+    </photo>
+    <photo>
+      <filename>C:\Rons Documents\Rons Personal Stuff\257_Maurice\pictures to generate web site\basement\basement5.jpg</filename>
+    </photo>
+  </photographs>
+</webalbum>

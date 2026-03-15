@@ -1,0 +1,332 @@
+{
+  "main": {
+    "images": [
+      "images/main_floor/mainfloor_010.jpg",
+      "images/main_floor/mainfloor_020.jpg",
+      "images/main_floor/mainfloor_030.jpg",
+      "images/main_floor/mainfloor_040.jpg",
+      "images/main_floor/mainfloor_050.jpg",
+      "images/main_floor/mainfloor_060.jpg",
+      "images/main_floor/mainfloor_070.jpg",
+      "images/main_floor/mainfloor_080.jpg",
+      "images/main_floor/mainfloor_090.jpg",
+      "images/main_floor/mainfloor_100.jpg",
+      "images/main_floor/mainfloor_110.jpg",
+      "images/main_floor/mainfloor_120.jpg",
+      "images/main_floor/mainfloor_140.jpg",
+      "images/main_floor/mainfloor_150.jpg",
+      "images/main_floor/mainfloor_160.jpg",
+      "images/main_floor/mainfloor_170.jpg",
+      "images/main_floor/mainfloor_180.jpg",
+      "images/main_floor/mainfloor_190.jpg"
+    ]
+  },
+  "basement": {
+    "images": [
+      "images/basement/basement_010.jpg",
+      "images/basement/basement_020.jpg",
+      "images/basement/basement_030.jpg",
+      "images/basement/basement_040.jpg",
+      "images/basement/basement_050.jpg",
+      "images/basement/basement_060.jpg",
+      "images/basement/basement_070.jpg",
+      "images/basement/basement_080.jpg"
+    ]
+  },
+  "common": {
+    "images": [
+      "images/common/common_008.jpg",
+      "images/common/common_010.jpg",
+      "images/common/common_020.jpg",
+      "images/common/common_030.jpg",
+      "images/common/common_040.jpg",
+      "images/common/common_050.jpg",
+      "images/common/common_060.jpg",
+      "images/common/common_100.jpg",
+      "images/common/common_120.jpg"
+    ]
+  },
+  "utility_bills": {
+    "electricity": [
+      {
+        "name": "2026-01-27.pdf",
+        "url": "utilities/electricity/2026-01-27.pdf",
+        "amount": "$151.28",
+        "period": "12/02/2025 to 01/05/2026"
+      },
+      {
+        "name": "2025-12-19.pdf",
+        "url": "utilities/electricity/2025-12-19.pdf",
+        "amount": "$357.23",
+        "period": "11/03/2025 to 12/02/2025"
+      },
+      {
+        "name": "2025-11-19.pdf",
+        "url": "utilities/electricity/2025-11-19.pdf",
+        "amount": "$123.45",
+        "period": "10/02/2025 to 11/01/2025"
+      },
+      {
+        "name": "2025-10-20.pdf",
+        "url": "utilities/electricity/2025-10-20.pdf",
+        "amount": "$320.63",
+        "period": "09/03/2025 to 10/02/2025"
+      },
+      {
+        "name": "2025-09-18.pdf",
+        "url": "utilities/electricity/2025-09-18.pdf",
+        "amount": "$170.86",
+        "period": "08/01/2025 to 09/03/2025"
+      },
+      {
+        "name": "2025-08-20.pdf",
+        "url": "utilities/electricity/2025-08-20.pdf",
+        "amount": "$412.90",
+        "period": "07/03/2025 to 08/01/2025"
+      },
+      {
+        "name": "2025-07-21.pdf",
+        "url": "utilities/electricity/2025-07-21.pdf",
+        "amount": "$164.88",
+        "period": "06/03/2025 to 07/03/2025"
+      },
+      {
+        "name": "2025-06-20.pdf",
+        "url": "utilities/electricity/2025-06-20.pdf",
+        "amount": "$367.19",
+        "period": "05/02/2025 to 06/03/2025"
+      },
+      {
+        "name": "2025-05-21.pdf",
+        "url": "utilities/electricity/2025-05-21.pdf",
+        "amount": "$118.32",
+        "period": "04/02/2025 to 05/02/2025"
+      },
+      {
+        "name": "2025-04-23.pdf",
+        "url": "utilities/electricity/2025-04-23.pdf",
+        "amount": "$338.44",
+        "period": "03/04/2025 to 04/02/2025"
+      },
+      {
+        "name": "2025-03-19.pdf",
+        "url": "utilities/electricity/2025-03-19.pdf",
+        "amount": "$127.34",
+        "period": "01/31/2025 to 03/04/2025"
+      },
+      {
+        "name": "2025-02-18.pdf",
+        "url": "utilities/electricity/2025-02-18.pdf",
+        "amount": "$343.51",
+        "period": "01/02/2025 to 01/31/2025"
+      },
+      {
+        "name": "2025-01-21.pdf",
+        "url": "utilities/electricity/2025-01-21.pdf",
+        "amount": "$151.34",
+        "period": "12/02/2024 to 01/02/2025"
+      },
+      {
+        "name": "2024-11-19.pdf",
+        "url": "utilities/electricity/2024-11-19.pdf",
+        "amount": "$112.35",
+        "period": "10/02/2024 to 11/01/2024"
+      },
+      {
+        "name": "2024-10-21.pdf",
+        "url": "utilities/electricity/2024-10-21.pdf",
+        "amount": "$276.73",
+        "period": "09/03/2024 to 10/02/2024"
+      },
+      {
+        "name": "2024-09-19.pdf",
+        "url": "utilities/electricity/2024-09-19.pdf",
+        "amount": "$164.16",
+        "period": "08/01/2024 to 09/03/2024"
+      },
+      {
+        "name": "2024-08-20.pdf",
+        "url": "utilities/electricity/2024-08-20.pdf",
+        "amount": "$369.21",
+        "period": "07/03/2024 to 08/01/2024"
+      },
+      {
+        "name": "2024-07-18.pdf",
+        "url": "utilities/electricity/2024-07-18.pdf",
+        "amount": "$140.38",
+        "period": "06/03/2024 to 07/03/2024"
+      },
+      {
+        "name": "2024-06-18.pdf",
+        "url": "utilities/electricity/2024-06-18.pdf",
+        "amount": "$317.65",
+        "period": "05/02/2024 to 06/03/2024"
+      },
+      {
+        "name": "2024-05-17.pdf",
+        "url": "utilities/electricity/2024-05-17.pdf",
+        "amount": "$110.52",
+        "period": "04/03/2024 to 05/02/2024"
+      },
+      {
+        "name": "2024-04-18.pdf",
+        "url": "utilities/electricity/2024-04-18.pdf",
+        "amount": "$300.69",
+        "period": "03/04/2024 to 04/03/2024"
+      },
+      {
+        "name": "2024-03-19.pdf",
+        "url": "utilities/electricity/2024-03-19.pdf",
+        "amount": "$131.86",
+        "period": "02/01/2024 to 03/04/2024"
+      },
+      {
+        "name": "2024-02-16.pdf",
+        "url": "utilities/electricity/2024-02-16.pdf",
+        "amount": "$346.92",
+        "period": "01/03/2024 to 02/01/2024"
+      }
+    ],
+    "gas": [
+      {
+        "name": "2025-12-25.pdf",
+        "url": "utilities/gas/2025-12-25.pdf",
+        "amount": "$116.71",
+        "period": "Nov 22, 2025 - Dec 19, 2025"
+      },
+      {
+        "name": "2025-11-25.pdf",
+        "url": "utilities/gas/2025-11-25.pdf",
+        "amount": "$76.69",
+        "period": "Sep 24, 2025 - Oct 22, 2025"
+      },
+      {
+        "name": "2025-10-25.pdf",
+        "url": "utilities/gas/2025-10-25.pdf",
+        "amount": "$115.90",
+        "period": "Oct 23, 2025 - Nov 21, 2025"
+      },
+      {
+        "name": "2025-09-25.pdf",
+        "url": "utilities/gas/2025-09-25.pdf",
+        "amount": "$56.53",
+        "period": "Aug 24, 2025 - Sep 23, 2025"
+      },
+      {
+        "name": "2025-08-25.pdf",
+        "url": "utilities/gas/2025-08-25.pdf",
+        "amount": "$15.56",
+        "period": "Jun 20, 2025 - Aug 23, 2025"
+      },
+      {
+        "name": "2025-07-24.pdf",
+        "url": "utilities/gas/2025-07-24.pdf",
+        "amount": "$77.32",
+        "period": "Jun 20, 2025 - Jul 23, 2025"
+      },
+      {
+        "name": "2025-06-24.pdf",
+        "url": "utilities/gas/2025-06-24.pdf",
+        "amount": "$79.03",
+        "period": "May 24, 2025 - Jun 19, 2025"
+      },
+      {
+        "name": "2025-05-24.pdf",
+        "url": "utilities/gas/2025-05-24.pdf",
+        "amount": "$66.07",
+        "period": "Apr 24, 2025 - May 23, 2025"
+      },
+      {
+        "name": "2025-04-24.pdf",
+        "url": "utilities/gas/2025-04-24.pdf",
+        "amount": "$274.23",
+        "period": "Jan 23, 2025 - Feb 24, 2025"
+      },
+      {
+        "name": "2025-03-24.pdf",
+        "url": "utilities/gas/2025-03-24.pdf",
+        "amount": "$164.13",
+        "period": "Feb 25, 2025 - Mar 24, 2025"
+      },
+      {
+        "name": "2025-02-24.pdf",
+        "url": "utilities/gas/2025-02-24.pdf",
+        "amount": "$172.69",
+        "period": "Nov 23, 2024 - Dec 18, 2024"
+      },
+      {
+        "name": "2025-01-26.pdf",
+        "url": "utilities/gas/2025-01-26.pdf",
+        "amount": "$198.87",
+        "period": "Dec 20, 2025 - Jan 22, 2026"
+      },
+      {
+        "name": "2025-01-24.pdf",
+        "url": "utilities/gas/2025-01-24.pdf",
+        "amount": "$259.17",
+        "period": "Dec 19, 2024 - Jan 22, 2025"
+      },
+      {
+        "name": "2024-11-24.pdf",
+        "url": "utilities/gas/2024-11-24.pdf",
+        "amount": "$96.99",
+        "period": "Oct 24, 2024 - Nov 22, 2024"
+      },
+      {
+        "name": "2024-10-24.pdf",
+        "url": "utilities/gas/2024-10-24.pdf",
+        "amount": "$68.51",
+        "period": "Sep 21, 2024 - Oct 23, 2024"
+      },
+      {
+        "name": "2024-10-23.pdf",
+        "url": "utilities/gas/2024-10-23.pdf",
+        "amount": "$68.51",
+        "period": "Sep 21, 2024 - Oct 23, 2024"
+      },
+      {
+        "name": "2024-09-20.pdf",
+        "url": "utilities/gas/2024-09-20.pdf",
+        "amount": "$58.36",
+        "period": "Aug 22, 2024 - Sep 20, 2024"
+      },
+      {
+        "name": "2024-08-21.pdf",
+        "url": "utilities/gas/2024-08-21.pdf",
+        "amount": "$55.88",
+        "period": "Jul 24, 2024 - Aug 21, 2024"
+      },
+      {
+        "name": "2024-07-23.pdf",
+        "url": "utilities/gas/2024-07-23.pdf",
+        "amount": "$61.64",
+        "period": "Jun 20, 2024 - Jul 23, 2024"
+      },
+      {
+        "name": "2024-05-23.pdf",
+        "url": "utilities/gas/2024-05-23.pdf",
+        "amount": "$59.91",
+        "period": "Apr 23, 2024 - May 23, 2024"
+      },
+      {
+        "name": "2024-04-22.pdf",
+        "url": "utilities/gas/2024-04-22.pdf",
+        "amount": "$185.56",
+        "period": "Mar 22, 2024 - Apr 22, 2024"
+      },
+      {
+        "name": "2024-03-22.pdf",
+        "url": "utilities/gas/2024-03-22.pdf",
+        "amount": "$161.27",
+        "period": "Feb 22, 2024 - Mar 21, 2024"
+      },
+      {
+        "name": "2024-02-22.pdf",
+        "url": "utilities/gas/2024-02-22.pdf",
+        "amount": "$237.56",
+        "period": "Jan 24, 2024 - Feb 21, 2024"
+      }
+    ]
+  },
+  "last_updated": "February 11, 2026"
+}

@@ -1,0 +1,48 @@
+<webalbum version="1.8.2">
+  <title></title>
+  <settings>
+    <photosize width="640" height="480">medium</photosize>
+    <thumbsize width="100" height="75">medium</thumbsize>
+    <outputdirectory>C:\Users\rdavison\Documents\Rons Documents\Rons Personal Stuff\Webs\www.thedavisons.ca\205_burnett\generated\basement\</outputdirectory>
+    <navigateinloop>False</navigateinloop>
+  </settings>
+  <layout>
+    <colourscheme>Default</colourscheme>
+    <pagecolor>16777215</pagecolor>
+    <textcolor>0</textcolor>
+    <linkcolor>16711680</linkcolor>
+    <hotlinkcolor>255</hotlinkcolor>
+    <thumbnailrows>9</thumbnailrows>
+    <thumbnailcols>3</thumbnailcols>
+    <navigationbelowphoto>False</navigationbelowphoto>
+  </layout>
+  <photographs>
+    <photo>
+      <filename>C:\Users\rdavison\Documents\Rons Documents\Rons Personal Stuff\205_Burnett\pictures to generate web site\basement\basement_livingroom_1.jpg</filename>
+    </photo>
+    <photo>
+      <filename>C:\Users\rdavison\Documents\Rons Documents\Rons Personal Stuff\205_Burnett\pictures to generate web site\basement\basement_1.jpg</filename>
+    </photo>
+    <photo>
+      <filename>C:\Users\rdavison\Documents\Rons Documents\Rons Personal Stuff\205_Burnett\pictures to generate web site\basement\basement_kitchen_1.jpg</filename>
+    </photo>
+    <photo>
+      <filename>C:\Users\rdavison\Documents\Rons Documents\Rons Personal Stuff\205_Burnett\pictures to generate web site\basement\basement_kitchen_2.jpg</filename>
+    </photo>
+    <photo>
+      <filename>C:\Users\rdavison\Documents\Rons Documents\Rons Personal Stuff\205_Burnett\pictures to generate web site\basement\basement_kitchen_3.jpg</filename>
+    </photo>
+    <photo>
+      <filename>C:\Users\rdavison\Documents\Rons Documents\Rons Personal Stuff\205_Burnett\pictures to generate web site\basement\basement_bedroom_1.jpg</filename>
+    </photo>
+    <photo>
+      <filename>C:\Users\rdavison\Documents\Rons Documents\Rons Personal Stuff\205_Burnett\pictures to generate web site\basement\basement_bedroom_2.jpg</filename>
+    </photo>
+    <photo>
+      <filename>C:\Users\rdavison\Documents\Rons Documents\Rons Personal Stuff\205_Burnett\pictures to generate web site\basement\basement_bathroom_1.jpg</filename>
+    </photo>
+    <photo>
+      <filename>C:\Users\rdavison\Documents\Rons Documents\Rons Personal Stuff\205_Burnett\pictures to generate web site\basement\basement_floorplan_1.jpg</filename>
+    </photo>
+  </photographs>
+</webalbum>

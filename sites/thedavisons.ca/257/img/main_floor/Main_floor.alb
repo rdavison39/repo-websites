@@ -1,0 +1,45 @@
+<webalbum version="1.8.2">
+  <title></title>
+  <settings>
+    <photosize width="640" height="480">medium</photosize>
+    <thumbsize width="100" height="75">medium</thumbsize>
+    <outputdirectory>C:\Users\rdavison\Documents\Rons Documents\Rons Personal Stuff\Webs\www.thedavisons.ca\257_maurice\generated\main_floor\</outputdirectory>
+    <navigateinloop>False</navigateinloop>
+  </settings>
+  <layout>
+    <colourscheme>Default</colourscheme>
+    <pagecolor>16777215</pagecolor>
+    <textcolor>0</textcolor>
+    <linkcolor>16711680</linkcolor>
+    <hotlinkcolor>255</hotlinkcolor>
+    <thumbnailrows>10</thumbnailrows>
+    <thumbnailcols>3</thumbnailcols>
+    <navigationbelowphoto>False</navigationbelowphoto>
+  </layout>
+  <photographs>
+    <photo>
+      <filename>C:\Users\rdavison\Documents\Rons Documents\Rons Personal Stuff\257_maurice\pictures to generate web site\main_floor\main_floor_kitchen_1.JPG</filename>
+    </photo>
+    <photo>
+      <filename>C:\Users\rdavison\Documents\Rons Documents\Rons Personal Stuff\257_maurice\pictures to generate web site\main_floor\main_floor_kitchen_2.jpg</filename>
+    </photo>
+    <photo>
+      <filename>C:\Users\rdavison\Documents\Rons Documents\Rons Personal Stuff\257_maurice\pictures to generate web site\main_floor\main_floor_living_room_1.JPG</filename>
+    </photo>
+    <photo>
+      <filename>C:\Users\rdavison\Documents\Rons Documents\Rons Personal Stuff\257_maurice\pictures to generate web site\main_floor\main_floor_hallway_1.jpg</filename>
+    </photo>
+    <photo>
+      <filename>C:\Users\rdavison\Documents\Rons Documents\Rons Personal Stuff\257_maurice\pictures to generate web site\main_floor\main_floor_bedroom_1.jpg</filename>
+    </photo>
+    <photo>
+      <filename>C:\Users\rdavison\Documents\Rons Documents\Rons Personal Stuff\257_maurice\pictures to generate web site\main_floor\main_floor_master_bedroom_1.jpg</filename>
+    </photo>
+    <photo>
+      <filename>C:\Users\rdavison\Documents\Rons Documents\Rons Personal Stuff\257_maurice\pictures to generate web site\main_floor\main_floor_second_bedroom_1.JPG</filename>
+    </photo>
+    <photo>
+      <filename>C:\Users\rdavison\Documents\Rons Documents\Rons Personal Stuff\257_maurice\pictures to generate web site\main_floor\main_floor_washroom_1.jpg</filename>
+    </photo>
+  </photographs>
+</webalbum>

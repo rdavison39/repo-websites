@@ -1,0 +1,48 @@
+<webalbum version="1.8.2">
+  <title>Outside and Common Areas</title>
+  <settings>
+    <photosize width="640" height="480">medium</photosize>
+    <thumbsize width="100" height="75">medium</thumbsize>
+    <outputdirectory>C:\Rons Documents\Rons Personal Stuff\Webs\www.thedavisons.ca\257_maurice\generated\common\</outputdirectory>
+    <navigateinloop>False</navigateinloop>
+  </settings>
+  <layout>
+    <colourscheme>Default</colourscheme>
+    <pagecolor>16777215</pagecolor>
+    <textcolor>0</textcolor>
+    <linkcolor>16711680</linkcolor>
+    <hotlinkcolor>255</hotlinkcolor>
+    <thumbnailrows>9</thumbnailrows>
+    <thumbnailcols>3</thumbnailcols>
+    <navigationbelowphoto>False</navigationbelowphoto>
+  </layout>
+  <photographs>
+    <photo>
+      <filename>C:\Rons Documents\Rons Personal Stuff\257_Maurice\pictures to generate web site\common\laundry1.jpg</filename>
+    </photo>
+    <photo>
+      <filename>C:\Rons Documents\Rons Personal Stuff\257_Maurice\pictures to generate web site\common\laundry3.jpg</filename>
+    </photo>
+    <photo>
+      <filename>C:\Rons Documents\Rons Personal Stuff\257_Maurice\pictures to generate web site\common\outside1.jpg</filename>
+    </photo>
+    <photo>
+      <filename>C:\Rons Documents\Rons Personal Stuff\257_Maurice\pictures to generate web site\common\outside2.jpg</filename>
+    </photo>
+    <photo>
+      <filename>C:\Rons Documents\Rons Personal Stuff\257_Maurice\pictures to generate web site\common\outside3.jpg</filename>
+    </photo>
+    <photo>
+      <filename>C:\Rons Documents\Rons Personal Stuff\257_Maurice\pictures to generate web site\common\outside7.jpg</filename>
+    </photo>
+    <photo>
+      <filename>C:\Rons Documents\Rons Personal Stuff\257_Maurice\pictures to generate web site\common\outside9.jpg</filename>
+    </photo>
+    <photo>
+      <filename>C:\Rons Documents\Rons Personal Stuff\257_Maurice\pictures to generate web site\common\outside11.jpg</filename>
+    </photo>
+    <photo>
+      <filename>C:\Rons Documents\Rons Personal Stuff\257_Maurice\pictures to generate web site\common\outside16.jpg</filename>
+    </photo>
+  </photographs>
+</webalbum>

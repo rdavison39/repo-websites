@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>99 Miller Road Rental</title>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<style>
+  :root { --primary: #2c3e50; --accent: #3498db; --bg: #f8f9fa; --white: #ffffff; }
+  body { margin: 0; font-family: 'Lato', sans-serif; background: var(--bg); color: #333; line-height: 1.5; }
+  
+  .hero { height: 25vh; background-color: #2c3e50; background-position: center; background-size: cover; display: flex; align-items: center; justify-content: center; color: white; transition: background-image 0.5s ease-in-out; }
+  .hero h1 { font-family: 'Playfair Display', serif; font-size: 2.2rem; margin: 0; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+
+  .unit-selector { display: flex; background: var(--white); position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+  .unit-btn { flex: 1; padding: 15px; border: none; background: none; font-weight: 700; text-transform: uppercase; font-size: 0.75rem; cursor: pointer; border-bottom: 3px solid transparent; color: #777; transition: 0.3s; }
+  .unit-btn.active { color: var(--accent); border-bottom-color: var(--accent); }
+
+  .gallery-wrapper { position: relative; max-width: 900px; margin: 20px auto; background: #000; border-radius: 12px; overflow: hidden; }
+  .main-img { width: 100%; height: 450px; object-fit: contain; display: block; }
+  
+  .nav-arrow { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.3); color: white; border: none; width: 45px; height: 45px; border-radius: 50%; cursor: pointer; z-index: 10; font-size: 1.2rem; display: flex; align-items: center; justify-content: center; }
+  .arrow-left { left: 15px; } .arrow-right { right: 15px; }
+
+  .thumbs { display: flex; gap: 10px; overflow-x: auto; padding: 15px; max-width: 900px; margin: auto; scroll-behavior: smooth; }
+  .thumb { flex: 0 0 80px; height: 55px; border-radius: 6px; opacity: 0.4; border: 2px solid transparent; cursor: pointer; overflow: hidden; }
+  .thumb.active { opacity: 1; border-color: var(--accent); }
+  .thumb img { width: 100%; height: 100%; object-fit: cover; }
+
+  .container { max-width: 800px; margin: auto; padding: 0 20px 40px; }
+  .info-card { background: var(--white); padding: 25px; border-radius: 12px; margin-top: 20px; box-shadow: 0 2px 15px rgba(0,0,0,0.05); }
+  .spec-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 15px; font-size: 0.95rem; }
+  .util-row { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee; }
+  .map-frame { width: 100%; height: 350px; border-radius: 12px; border: none; margin-top: 15px; }
+
+  #utilityBillsSection { display: none; border: 2px dashed #dce4ec; }
+
+  .section-toggle { width: 100%; text-align: left; padding: 0; background: none; border: none; font-size: 1.5rem; font-weight: 700; font-family: 'Playfair Display', serif; color: var(--primary); cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+  .section-content { max-height: 0; overflow: hidden; transition: max-height 0.5s ease-out; }
+  .section-card.active .section-content { max-height: 5000px; }
+  .section-toggle::after { content: "▼"; font-size: 0.8rem; color: var(--accent); }
+  .section-card.active .section-toggle::after { content: "▲"; }
+
+  .search-box { width: 100%; padding: 12px; margin: 15px 0; border: 1px solid #ddd; border-radius: 8px; font-size: 1rem; box-sizing: border-box; }
+  .bill-table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+  .bill-table th { border-bottom: 1px solid #eee; color: #888; text-align: left; padding: 8px 4px; }
+  .bill-table td { padding: 10px 4px; border-bottom: 1px solid #f9f9f9; }
+  .bill-link { color: var(--accent); text-decoration: none; font-weight: bold; word-break: break-all; }
+
+  .faq-item { border-bottom: 1px solid #eee; }
+  .faq-question { width: 100%; text-align: left; padding: 15px 0; background: none; border: none; font-weight: 700; color: var(--primary); cursor: pointer; display: flex; justify-content: space-between; font-size: 1rem; }
+  .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; color: #555; font-size: 0.95rem; }
+  .faq-answer p { padding: 0 0 15px 0; margin: 0; }
+  .faq-item.active .faq-answer { max-height: 600px; }
+  .faq-item.active .faq-question::after { content: "−"; }
+  .faq-question::after { content: "+"; color: var(--accent); font-weight: bold; }
+
+  #secretSpot { cursor: pointer; user-select: none; }
+  #syncTime { text-align: center; font-size: 0.7rem; color: #aaa; margin-top: 15px; }
+
+  @media (max-width: 600px) { 
+    .util-cols { grid-template-columns: 1fr !important; }
+    .bill-table { font-size: 0.75rem; }
+  }
+</style>
+</head>
+<body>
+
+<div class="hero" id="heroBanner"><h1>99 Miller Road</h1></div>
+
+<div class="unit-selector">
+  <button id="btn-main" class="unit-btn active" onclick="switchUnit('main')">Main Floor</button>
+  <button id="btn-basement" class="unit-btn" onclick="switchUnit('basement')">Basement</button>
+  <button id="btn-common" class="unit-btn" onclick="switchUnit('common')">Common Area</button>
+</div>
+
+<div class="gallery-wrapper" id="galleryFrame">
+  <button class="nav-arrow arrow-left" onclick="changePhoto(-1)">❮</button>
+  <img id="displayImg" class="main-img" src="" alt="Property View">
+  <button class="nav-arrow arrow-right" onclick="changePhoto(1)">❯</button>
+</div>
+<div id="thumbBar" class="thumbs"></div>
+
+<div class="container">
+  
+  <div class="info-card">
+    <h2 id="unitTitle"></h2>
+    <p id="unitDesc"></p>
+    <div id="unitSpecs" class="spec-grid"></div>
+  </div>
+
+  <div class="info-card">
+    <h3>Monthly Utilities (2025 Averages)</h3>
+    <div id="utilContent"></div>
+    <p style="font-size: 0.8rem; color: #666; margin-top: 10px;">*Main floor pays 85% of building consumption. Basement is all-inclusive.</p>
+  </div>
+
+  <div class="info-card section-card" id="utilityBillsSection">
+    <button class="section-toggle" onclick="toggleSection('utilityBillsSection')">Utility History & PDF Bills</button>
+    <div class="section-content">
+      <input type="text" class="search-box" id="billSearch" onkeyup="filterBills()" placeholder="Search by month or year...">
+      
+      <h4>Electricity (Hydro)</h4>
+      <table class="bill-table" id="elecTable"></table>
+      
+      <h4 style="margin-top:25px;">Gas (Heating)</h4>
+      <table class="bill-table" id="gasTable"></table>
+    </div>
+  </div>
+
+  <div class="info-card section-card" id="faqSection">
+    <button class="section-toggle" onclick="toggleSection('faqSection')">Frequently Asked Questions</button>
+    <div class="section-content" id="faqContainer" style="margin-top:20px;"></div>
+  </div>
+
+  <div class="info-card">
+    <h3>Location</h3>
+    <p>99 Miller Road, Oakville, ON L6H 1L6</p>
+    <iframe class="map-frame" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA3hiGG9ukAu_nYvndOhc4U-GtdIRMEJ5w&q=99+Miller+Road+Oakville+Ontario4" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+
+  <div class="info-card" style="text-align: center; border-bottom: 5px solid var(--accent);">
+    <p id="secretSpot"><strong>Ronald Davison</strong></p>
+    <p><a href="mailto:ronaldjdavison@hotmail.com">ronaldjdavison@hotmail.com</a> | 905-464-2014</p>
+    <div id="syncTime"></div>
+  </div>
+</div>
+
+<script>
+const propertyInfo = {
+  main: {
+    title: "Main Floor Suite (Renovated 2023)",
+    desc: "A bright, open-concept 3-bedroom suite with maple hardwood throughout and quartz countertops.",
+    specs: ["3 Bedrooms", "1 Bathroom", "Induction Stove", "Self-Cleaning Oven", "Quartz Counters", "Maple Hardwoods"],
+    utils: [{label: "Heat/Gas (85%)", cost: "$103"}, {label: "Hydro/Elec (85%)", cost: "$191"}, {label: "Monthly Average", cost: "$294/mo"}]
+  },
+  basement: {
+    title: "Basement Suite",
+    desc: "A fully renovated 1-bedroom suite with Italian travertine-style flooring.",
+    specs: ["1 Large Bedroom", "1 Bathroom", "Travertine Floors", "Private Entrance", "New Electrical", "New Insulation"],
+    utils: [{label: "Heat/Gas", cost: "Included"}, {label: "Hydro/Elec", cost: "Included"}, {label: "Monthly Cost", cost: "$0"}]
+  },
+  common: {
+    title: "Common Areas",
+    desc: "Shared laundry, backyard access, and garage storage.",
+    specs: ["Shared Laundry", "Backyard Access", "Garage Storage", "Parking Spots", "Front Yard", "Secure Entry"],
+    utils: [{label: "Water/Waste", cost: "Shared"}, {label: "Internet", cost: "Shared Account"}, {label: "Common Laundry", cost: "No Charge"}]
+  }
+};
+
+const faqItems = [
+  { q: "Are utilities included in the rent?", a: "Utilities are not included for the main floor (85% split). Basement utilities are included. Note: Basement tenant regulates temp via vents." },
+  { q: "How are the bills paid?", a: "Landlord pays bills directly. Account is settled every 6 months. Bills are posted online for audit." },
+  { q: "Is Smoking permitted?", a: "<strong>No. Smoking is NOT permitted inside.</strong> Strictly enforced." },
+  { q: "How is the Yard Maintenance handled?", a: "Shared responsibility. Mower supplied. Landlord hires service ($80/cut) if neglected." },
+  { q: "What is the process to rent?", a: "Application approval + First/Last month deposit secures the unit." }
+];
+
+let photoData = { main: [], basement: [], common: [] };
+let currentUnit = 'main';
+let currentIdx = 0;
+
+async function init() {
+  try {
+    const response = await fetch('miller_data.json?t=' + new Date().getTime());
+    const data = await response.json();
+    
+    photoData = { main: data.main.images, basement: data.basement.images, common: data.common.images };
+    if (data.last_updated) document.getElementById('syncTime').innerText = "Records last synced: " + data.last_updated;
+
+    if (photoData.main.length > 0) {
+      document.getElementById('heroBanner').style.backgroundImage = `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('${photoData.main[0]}')`;
+    }
+
+    renderTable('elecTable', data.utility_bills.electricity);
+    renderTable('gasTable', data.utility_bills.gas);
+
+    document.getElementById('faqContainer').innerHTML = faqItems.map(f => `
+      <div class="faq-item">
+        <button class="faq-question" onclick="this.parentElement.classList.toggle('active')">${f.q}</button>
+        <div class="faq-answer"><p>${f.a}</p></div>
+      </div>`).join('');
+
+    switchUnit('main');
+  } catch (e) { console.error("JSON Error:", e); }
+}
+
+function renderTable(id, list) {
+  const table = document.getElementById(id);
+  if (!list || list.length === 0) { table.innerHTML = "<tr><td>No data.</td></tr>"; return; }
+  
+  let html = `<thead><tr><th>File</th><th>Period</th><th style="text-align:right;">Amount</th></tr></thead><tbody>`;
+  html += list.map(b => `
+    <tr class="bill-row">
+      <td><a class="bill-link" href="${b.url}" target="_blank">${b.name}</a></td>
+      <td style="color:#666;">${b.period || '---'}</td>
+      <td style="text-align:right; font-weight:700;">${b.amount || '---'}</td>
+    </tr>`).join('');
+  html += `</tbody>`;
+  table.innerHTML = html;
+}
+
+function filterBills() {
+  const val = document.getElementById('billSearch').value.toLowerCase();
+  document.querySelectorAll('.bill-row').forEach(row => {
+    row.style.display = row.innerText.toLowerCase().includes(val) ? "" : "none";
+  });
+}
+
+function toggleSection(id) { document.getElementById(id).classList.toggle('active'); }
+
+document.getElementById('secretSpot').addEventListener('dblclick', () => {
+    const section = document.getElementById('utilityBillsSection');
+    section.style.display = 'block';
+    section.classList.add('active');
+    section.scrollIntoView({ behavior: 'smooth' });
+});
+
+function switchUnit(key) {
+  currentUnit = key; currentIdx = 0;
+  document.querySelectorAll('.unit-btn').forEach(b => b.classList.toggle('active', b.id.includes(key)));
+  const info = propertyInfo[key];
+  document.getElementById('unitTitle').innerText = info.title;
+  document.getElementById('unitDesc').innerText = info.desc;
+  document.getElementById('unitSpecs').innerHTML = info.specs.map(s => `<div>• ${s}</div>`).join('');
+  document.getElementById('utilContent').innerHTML = info.utils.map(u => `<div class="util-row"><span>${u.label}</span><span>${u.cost}</span></div>`).join('');
+  renderGallery();
+}
+
+function renderGallery() {
+  const p = photoData[currentUnit] || [];
+  if (p.length === 0) return;
+  document.getElementById('displayImg').src = p[currentIdx];
+  document.getElementById('thumbBar').innerHTML = p.map((img, i) => `<div class="thumb ${i === currentIdx ? 'active' : ''}" onclick="setPhoto(${i})"><img src="${img}"></div>`).join('');
+}
+
+function setPhoto(i) { currentIdx = i; renderGallery(); }
+function changePhoto(dir) {
+  const p = photoData[currentUnit] || [];
+  if (p.length === 0) return;
+  currentIdx = (currentIdx + dir + p.length) % p.length;
+  renderGallery();
+}
+
+window.onload = init;
+</script>
+</body>
+</html>

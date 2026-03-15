@@ -1,0 +1,452 @@
+﻿/* =========================================================
+ This rule resets a core set of elements so that they will appear consistent across browsers. Without this rule, content styled with an h1 tag, for example, 
+ would appear in different places in Firefox and Internet Explorer because each browser has a different top margin default value. By resetting these values to 0, 
+ the elements will initially be rendered in an identical fashion and their properties can be easily defined by the designer in any subsequent rule. 
+ ==========================================================*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6 {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	outline: 0px;
+	font-size: 100%;
+}
+a {
+   outline: 0;
+}
+
+/* ======================================================
+ The body is the outermost layout component and contains the visible page content. Setting properties for the body element will help to create consistent styling of 
+ the page content and more manageable CSS. Besides using the body element to set global properties, it is common to use the body element to set the background color of the 
+ page and create a centered container for the page content to display. 
+ =======================================================*/
+body {
+	text-align: center; /* Centers the page content container in IE 5 browsers. */;
+	padding: 0px 0px 0px 0px;
+	background-color: #E2DEC3;
+	line-height: 1.2em;
+	font-size: 1em;
+	color: #2d2e2e;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0px 0px 0px 0px;
+}
+body img {
+	border: 0px;
+	text-decoration: none;
+	max-width: 100%;
+	height: auto;
+	width: auto\9; /* ie8 */
+}
+
+/* =====================================
+Commonly used to style page titles. 
+========================================*/
+h1, h2, h3 {
+	color: #1C140E;
+	margin: 5px 0px 5px 10px;
+	font-family: "Palatino Linotype", Georgia, "Times New Roman", Times, serif;
+}
+h1 {
+	font-size: 1.7em;
+}
+h2 {
+	font-size: 1.3em;
+}
+h3 {
+	font-size: 1.1em;
+}
+h4 {
+	color:gray;
+	margin: 5px 10px 5px 1px;
+	font-family: Arial, Helvetica, sans-serif, Times, serif;
+	font-size: 1.1em;
+}
+
+/*================================
+Link Styles unless specified separately
+=================================*/
+a, a:link {
+	color: #336600;
+	font-weight: bold;
+	text-decoration: none;
+}
+a:visited {
+	color: #666633;
+	font-weight: bold;
+	text-decoration: none;
+}
+a:hover {
+	color: #808080;
+	text-decoration: underline;
+}
+a:focus {
+	color: #2170bd;
+}
+a:active {
+	color: #2170bd;
+}
+
+/* ===============================================
+This is a container for the page content. It is common to use the container to constrain the width of the page content and allow for browser chrome to a
+void the need for horizontal scrolling. For fixed layouts you may specify a container width and use auto for the left and right margin to center the container 
+on the page. IE 5 browser require the use of text-align: center defined by the body element to center the container. For liquid layouts you may simply set the 
+left and right margins to center the container on the page.
+================================================== */
+#outerWrapper {
+	background-color: #fff;
+	width: 964px;
+	text-align: left; /* Redefines the text alignment defined by the body element. */;
+	margin: 25px auto 25px auto;
+	border: 1px #000000 solid;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-moz-box-shadow: 0 0 20px #453823;
+	-webkit-box-shadow: 0 0 20px #453823;
+	box-shadow: 0 0 20px #453823;}
+	
+/*===================================
+Masthaead Styles
+====================================*/
+#outerWrapper #header {
+	background: #26301A url('../images/front_yard_title.jpg') no-repeat top;
+	padding: 10px 10px 10px 10px;
+	font-weight: bold;
+	min-height: 283px;
+	border-radius: 8px 8px 0px 0px;
+	-webkit-border-radius: 8px 8px 0px 0px;
+	-moz-border-radius: 8px 8px 0px 0px;
+}
+#outerWrapper #header .sitename {
+	font-family: "Palatino Linotype", Georgia, "Times New Roman", Times, serif;
+	font-size: 1.7em;
+	font-weight: bold;
+	color: #FFFFFF;
+	margin-top: 200px;
+	margin-left: 25px;
+	letter-spacing: .25em;
+	line-height: 1em;
+}
+.tagline {
+	font-size: small;
+}
+/*========================================
+Top Navigation
+=========================================*/
+#outerWrapper #topNavigation {
+	background-color: #756B5C;
+	min-height: 2.3em;
+	padding: 10px 0px 10px 0px;
+	border-bottom: solid 1px #1C140E;
+}
+#outerWrapper #topNavigation ul {
+	list-style-type: none;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+#outerWrapper #topNavigation li {
+	float: left;
+}
+#outerWrapper #topNavigation a {
+	color: #FFFFFF;
+	text-decoration: none;
+	margin: 0px 1px;
+	padding: 5px;
+	display: block;
+}
+#outerWrapper #topNavigation a:hover {
+	background-color: #B9AEA8;
+	color: #000000;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+}
+
+/*=======================================
+Wrapper for the content columns
+========================================*/
+#contentWrapper {
+	background-position: right;
+	clear: both;
+	background-image: url('../images/content-bg.jpg');
+	background-repeat: repeat-y;
+}
+
+#contactUs{
+	font-family: "Palatino Linotype", Georgia, "Times New Roman", Times, serif;
+	font-size: 24px ;
+    background-color:#CCCCCC; 
+	color: black; 
+	border:medium solid grey; 
+	border-style:ridge; 
+	padding: 10px 10px 10px 10px;
+	float: left;
+	
+
+}
+#contactUs a:hover {
+	color:blue ;
+	background-color: gray;
+	border: 1px solid #455D13;
+}
+
+
+#rightColumn1 {
+	padding: 10px 10px 10px 10px;
+	float: right;
+	width: 200px;
+	font-size:small;
+}
+
+
+
+/*================================
+Right sidebar navigation menu
+==================================*/
+
+
+#rightColumn1 ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 4px;
+}
+#rightColumn1 li {
+	list-style: none;
+	padding: 2px 0;
+}
+#rightColumn1 ul li a {
+	display: block;
+	color: #FFFFFF;
+	padding: 4px;
+	text-decoration: none;
+	background-color: #766E62;
+	border: 1px solid #1C140E;
+	margin-top: 3px;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+}
+#rightColumn1 a:hover {
+	color: #ffffff;
+	background-color: #455D13;
+	border: 1px solid #455D13;
+}
+
+.heading {
+	display: block;
+	color: #FFFFFF;
+	font-weight: bold;
+	padding: 4px;
+	background: #455D13;
+	text-decoration: none;
+	border: 1px solid #1C140E;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+}
+
+/*===========================================
+ Contains the main page content. When using a mutliple column layout the margins will be set to account for the floated columns' width, margins, and padding. 
+============================================*/
+
+/*
+#content {
+	padding: 10px 20px 10px 20px; 
+	margin: 0px 220px 0px 0px; 
+}
+*/
+
+#content {
+	padding: 20px 20px 10px 20px; 
+	margin: 1px 1px 0px 0px; 
+	font-family: "Palatino Linotype", Georgia, "Times New Roman", Times, serif;
+	font-size: 1.0em;
+
+}
+
+/*
+#content1 {
+	padding: 5px 40px 1px 2px; 
+	margin: 0px 2px 0px 0px; 
+	color:#808080;
+	font-family: "Palatino Linotype", Georgia, "Times New Roman", Times, serif;
+	font-size:small;
+}
+*/
+
+#mainFloor {
+    border:3px gray groove;
+	padding: 2px 50px 1px 2px; 
+	margin: 2px 2px 2px 2px; 
+}
+#commonArea {
+
+    border:3px gray groove;
+	padding: 2px 50px 1px 2px; 
+	margin: 2px 2px 2px 2px; 
+ 
+}
+
+#basement {
+
+    border:3px gray groove;
+	padding: 2px 50px 1px 2px; 
+	margin: 2px 2px 2px 2px; 
+ 
+}
+
+#map_canvas {
+    width: 400px;
+    height: 400px;
+}
+
+#faq {
+    border:3px gray groove;
+	padding: 10px 10px 10px 5px; 
+	margin: 20px 10px 10px 5px; 
+; 
+
+}
+
+
+
+/* =========================================
+ Using floated elements and a clear float class is a common method to accomplish multiple column tableless layouts. If floated elements are used 
+without being cleared the elements following will wrap around the floated element. This class should be applied to an element after the last floated 
+element and before the close of the container with floated elements. 
+============================================*/
+.clearFloat {
+  display: block;
+  clear: both;
+}
+/*=================================================
+Footer Styles 
+==================================================*/
+#footer {
+	background-color: #756B5C;
+	padding: 10px 10px 10px 10px;
+	border-radius: 0px 0px 8px 8px;
+	-webkit-border-radius: 0px 0px 8px 8px;
+	-moz-border-radius: 0px 0px 8px 8px;
+	color: #ffffff;
+}
+#footer p {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	text-align: center;
+	font-size: .85em;
+}
+#footer a:link {
+	color: #ffffff;
+}
+#footer a:visited {
+	color: #800000;
+}
+#footer a:hover, #footer a:focus {
+	color: #FFFFFF;
+}
+#footer a:active {
+	color: #999999;
+}
+/*============================================
+Floating images left, right or centered on page
+=============================================*/
+.imglft {
+	padding: 5px 10px 5px 0px;
+	float: left;
+}
+.imgrgt {
+	padding: 5px 0px 5px 10px;
+	float: right;
+}
+.imgctr {
+	display: block;
+	margin: 0px auto;
+}
+/*=====================================
+Misc Typographic styles
+======================================*/
+.ctr {
+	text-align: center;
+}
+.smltxt {
+	font-size: small;
+}
+/*=============
+form styles 
+==============*/
+form fieldset {
+	padding: 1em;
+	font: 80%/1 sans-serif;
+	border: 2px solid #000000;
+	width: 300px;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	box-shadow: 3px 3px 6px #dddddd;
+	-moz-box-shadow: 3px 3px 6px #dddddd;
+	-webkit-box-shadow: 3px 3px 6px #dddddd;
+}
+form fieldset label {
+	width: 15%;
+	margin-right: 0.5em;
+	padding-top: 0.2em;
+	text-align: right;
+	font-weight: bold;
+}
+form fieldset legend {
+	padding: 0.2em 0.5em;
+	color: #000000;
+	font-size: 90%;
+	text-align: right;
+	font-variant: small-caps;
+}
+.cf {
+	border: 1px #353c48 solid;
+	background-image: url('../images/form-bg.jpg');
+	background-repeat: repeat;
+}
+.button {
+	font: normal 90% Verdana, serif;
+	height: 22px;
+	border: 1px solid #CDBB99;
+	background-color: #4A3527;
+	color: #ffffff;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+}
+input:focus {
+	border: 2px solid #993300;
+}
+
+
+/*============ For Google search box ==============*/
+
+.search {
+	text-align: center;
+	margin: 3px auto 8px auto;
+	font-size: .8em;
+	font-family: Tahoma, Helvetica, Arial, sans-serif;
+}
+.search p {
+	margin-bottom: 0px;
+	font-size: .85em;
+}
+.myform {
+	margin: 0;
+	padding: 0;
+}
+.myform .textinput {
+	width: 100px;
+	border: 1px solid gray;
+}
+.myform .submit {
+	font: bold 11px Verdana;
+	height: 22px;
+	background-color: #766E62;;
+	color: #FFFFFF;
+}
+
+
