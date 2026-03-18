@@ -114,6 +114,21 @@ margin-left:auto;
 }
 
 /* =========================
+🔥 NEW: MOBILE CALL BUTTON
+========================= */
+
+.mobile-call{
+display:none;
+background:#e6b800;
+color:black !important;
+padding:10px;
+border-radius:6px;
+text-align:center;
+font-weight:bold;
+margin-top:10px;
+}
+
+/* =========================
 HERO SECTION
 ========================= */
 
@@ -405,6 +420,11 @@ display:flex;
 #nav-menu a{
 margin:10px 0;
 font-size:16px;
+}
+
+/* 🔥 SHOW CALL BUTTON */
+.mobile-call{
+display:block;
 }
 
 .header-phone{

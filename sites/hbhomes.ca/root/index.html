@@ -171,6 +171,19 @@ function toggleMenu(){
   const nav = document.getElementById("nav-menu");
   nav.classList.toggle("active");
 }
+
+/* 🔥 AUTO CLOSE MENU */
+document.addEventListener("click", function(e){
+  const nav = document.getElementById("nav-menu");
+
+  if (e.target.closest("#nav-menu a")) {
+    nav.classList.remove("active");
+  }
+
+  if (!e.target.closest("#nav-menu") && !e.target.closest(".menu-toggle")) {
+    nav.classList.remove("active");
+  }
+});
 </script>
 
 </body>
