@@ -22,6 +22,7 @@ display:flex;
 align-items:center;
 justify-content:space-between;
 flex-wrap:wrap;
+position:relative;
 }
 
 /* =========================
@@ -107,21 +108,22 @@ HAMBURGER MENU
 
 .menu-toggle{
 display:none;
-font-size:28px;
+font-size:30px;
 cursor:pointer;
 color:white;
 margin-left:auto;
+padding:5px 10px;
 }
 
 /* =========================
-🔥 NEW: MOBILE CALL BUTTON
+MOBILE CALL BUTTON
 ========================= */
 
 .mobile-call{
 display:none;
 background:#e6b800;
 color:black !important;
-padding:10px;
+padding:12px;
 border-radius:6px;
 text-align:center;
 font-weight:bold;
@@ -388,52 +390,54 @@ border:3px solid #e6b800;
 }
 
 /* =========================
-MOBILE (HAMBURGER)
+MOBILE (FIXED PROPERLY)
 ========================= */
 
 @media (max-width:700px){
 
 header{
-flex-direction:column;
-align-items:flex-start;
+flex-direction:row;
+align-items:center;
+justify-content:space-between;
 }
 
-/* show hamburger */
+/* hamburger visible */
 .menu-toggle{
 display:block;
 }
 
-/* hide menu initially */
+/* 🔥 hide nav properly */
 #nav-menu{
 display:none;
-flex-direction:column;
+position:absolute;
+top:100%;
+left:0;
 width:100%;
-margin-top:10px;
+background:#1f3d2b;
+flex-direction:column;
+padding:15px;
+z-index:999;
 }
 
-/* show when toggled */
+/* show menu */
 #nav-menu.active{
 display:flex;
 }
 
-/* menu items */
+/* links */
 #nav-menu a{
 margin:10px 0;
 font-size:16px;
 }
 
-/* 🔥 SHOW CALL BUTTON */
+/* call button */
 .mobile-call{
 display:block;
 }
 
+/* hide top phone (cleaner mobile) */
 .header-phone{
-margin-top:10px;
-}
-
-.header-phone a{
-font-size:18px;
-display:inline-block;
+display:none;
 }
 
 .hero h2{
