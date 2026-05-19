@@ -15,7 +15,7 @@
 
     <link
         rel="stylesheet"
-        href="css/styles.css?v=2">
+        href="css/styles.css?v=4">
 
     <!-- GOOGLE FONTS -->
 
@@ -83,65 +83,111 @@
 
             <div class="container nav-inner">
 
-               <!-- HAMBURGER -->
+                <!-- HAMBURGER -->
 
-<div class="hamburger" onclick="toggleMenu()">
+                <div class="hamburger" onclick="toggleMenu()">
 
-    <span></span>
-    <span></span>
-    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
 
-</div>
+                </div>
 
-<!-- NAVIGATION -->
+                <!-- NAVIGATION -->
 
-<nav class="main-nav">
+                <nav class="main-nav">
 
-    <ul>
+                    <ul>
 
-        <li><a href="index.html">Home</a></li>
+                        <li>
+                            <a href="index.html">
+                                Home
+                            </a>
+                        </li>
 
-        <li><a href="about-paige.html">About Paige</a></li>
+                        <li>
+                            <a href="about-paige.html">
+                                About Paige
+                            </a>
+                        </li>
 
-        <li><a href="weddings.html">Weddings</a></li>
+                        <li>
+                            <a href="weddings.html">
+                                Weddings
+                            </a>
+                        </li>
 
-        <li><a href="gallery.html">Gallery</a></li>
+                        <li>
+                            <a href="gallery.html">
+                                Gallery
+                            </a>
+                        </li>
 
-        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li>
+                            <a href="testimonials.html">
+                                Testimonials
+                            </a>
+                        </li>
 
-        <li class="dropdown">
+                        <!-- DESKTOP DROPDOWN -->
 
-    <a href="#" class="dropbtn">
-        More
-    </a>
+                        <li class="desktop-dropdown dropdown">
 
-    <ul class="dropdown-menu">
+                            <a
+                                href="#"
+                                class="dropbtn">
 
-        <li>
-            <a href="humanist-ceremonies.html">
-                Humanist Ceremonies
-            </a>
-        </li>
+                                More
 
-        <li>
-            <a href="faqs.html">
-                FAQs
-            </a>
-        </li>
+                            </a>
 
-        <li>
-            <a href="contact.html">
-                Contact
-            </a>
-        </li>
+                            <ul class="dropdown-menu">
 
-    </ul>
+                                <li>
+                                    <a href="humanist-ceremonies.html">
+                                        Humanist Ceremonies
+                                    </a>
+                                </li>
 
-</li>
+                                <li>
+                                    <a href="faqs.html">
+                                        FAQs
+                                    </a>
+                                </li>
 
-    </ul>
+                                <li>
+                                    <a href="contact.html">
+                                        Contact
+                                    </a>
+                                </li>
 
-</nav>
+                            </ul>
+
+                        </li>
+
+                        <!-- MOBILE ONLY LINKS -->
+
+                        <li class="mobile-only">
+                            <a href="humanist-ceremonies.html">
+                                Humanist Ceremonies
+                            </a>
+                        </li>
+
+                        <li class="mobile-only">
+                            <a href="faqs.html">
+                                FAQs
+                            </a>
+                        </li>
+
+                        <li class="mobile-only">
+                            <a href="contact.html">
+                                Contact
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </nav>
 
                 <!-- RIGHT SIDE -->
 
@@ -372,20 +418,24 @@
         </div>
 
     </footer>
-<script>
 
-function toggleMenu() {
+    <!-- =========================
+         MOBILE MENU SCRIPT
+    ========================== -->
 
-    document
-        .querySelector('.main-nav')
-        .classList
-        .toggle('active');
+    <script>
 
-}
+        function toggleMenu() {
 
-</script>
+            document
+                .querySelector('.main-nav')
+                .classList
+                .toggle('active');
 
-</body>
+        }
+
+    </script>
+
 </body>
 
 </html>

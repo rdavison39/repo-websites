@@ -15,7 +15,7 @@
 
     <link
         rel="stylesheet"
-        href="css/styles.css?v=2">
+        href="css/styles.css?v=4">
 
     <!-- GOOGLE FONTS -->
 
@@ -82,65 +82,112 @@
         <div class="nav-container">
 
             <div class="container nav-inner">
-<!-- HAMBURGER -->
 
-<div class="hamburger" onclick="toggleMenu()">
+                <!-- HAMBURGER -->
 
-    <span></span>
-    <span></span>
-    <span></span>
+                <div class="hamburger" onclick="toggleMenu()">
 
-</div>
+                    <span></span>
+                    <span></span>
+                    <span></span>
 
-<!-- NAVIGATION -->
+                </div>
 
-<nav class="main-nav">
+                <!-- NAVIGATION -->
 
-    <ul>
+                <nav class="main-nav">
 
-        <li><a href="index.html">Home</a></li>
+                    <ul>
 
-        <li><a href="about-paige.html">About Paige</a></li>
+                        <li>
+                            <a href="index.html">
+                                Home
+                            </a>
+                        </li>
 
-        <li><a href="weddings.html">Weddings</a></li>
+                        <li>
+                            <a href="about-paige.html">
+                                About Paige
+                            </a>
+                        </li>
 
-        <li><a href="gallery.html">Gallery</a></li>
+                        <li>
+                            <a href="weddings.html">
+                                Weddings
+                            </a>
+                        </li>
 
-        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li>
+                            <a href="gallery.html">
+                                Gallery
+                            </a>
+                        </li>
 
-        <li class="dropdown">
+                        <li>
+                            <a href="testimonials.html">
+                                Testimonials
+                            </a>
+                        </li>
 
-    <a href="#" class="dropbtn">
-        More
-    </a>
+                        <!-- DESKTOP DROPDOWN -->
 
-    <ul class="dropdown-menu">
+                        <li class="desktop-dropdown dropdown">
 
-        <li>
-            <a href="humanist-ceremonies.html">
-                Humanist Ceremonies
-            </a>
-        </li>
+                            <a
+                                href="#"
+                                class="dropbtn">
 
-        <li>
-            <a href="faqs.html">
-                FAQs
-            </a>
-        </li>
+                                More
 
-        <li>
-            <a href="contact.html">
-                Contact
-            </a>
-        </li>
+                            </a>
 
-    </ul>
+                            <ul class="dropdown-menu">
 
-</li>
+                                <li>
+                                    <a href="humanist-ceremonies.html">
+                                        Humanist Ceremonies
+                                    </a>
+                                </li>
 
-    </ul>
+                                <li>
+                                    <a href="faqs.html">
+                                        FAQs
+                                    </a>
+                                </li>
 
-</nav>
+                                <li>
+                                    <a href="contact.html">
+                                        Contact
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </li>
+
+                        <!-- MOBILE ONLY LINKS -->
+
+                        <li class="mobile-only">
+                            <a href="humanist-ceremonies.html">
+                                Humanist Ceremonies
+                            </a>
+                        </li>
+
+                        <li class="mobile-only">
+                            <a href="faqs.html">
+                                FAQs
+                            </a>
+                        </li>
+
+                        <li class="mobile-only">
+                            <a href="contact.html">
+                                Contact
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </nav>
 
                 <!-- RIGHT SIDE -->
 
@@ -195,65 +242,49 @@
             </h3>
 
             <p>
-
                 Throughout my life I have followed many pathways...
-
             </p>
 
             <p>
-
                 I grew up in two cities (one in southern and one in northern Ontario);
                 went to school in five cities; and have travelled to four continents.
-
             </p>
 
             <p>
-
                 I worked at a summer camp (John Island!), in a restaurant,
                 at a golf course, and the Ministries of Education,
                 Natural Resources and Forestry, and a Conservation Authority...
                 and this was all before I began my career as a teacher!
-
             </p>
 
             <p>
-
                 As a teacher I taught grades 6-8, was a vice principal,
                 focused on special education, and taught in the Faculty of Education
                 for two universities.
-
             </p>
 
             <p>
-
                 Over the years I have volunteered at a food bank,
                 the YMCA, a Humane Society and the St. John Ambulance
                 Therapy Dog Program where I am an Evaluator,
                 and still volunteer with my golden retriever Buck.
-
             </p>
 
             <p>
-
                 At home I love spending time with my family and friends
                 and getting in lots of walks on the Bruce Trail with Buck.
                 It doesn't get much better than that!
-
             </p>
 
             <p>
-
                 I became an Officiant because I wanted to be part of,
                 and contribute to, significant moments and celebrations
                 in people's lives.
-
             </p>
 
             <p>
-
                 I consider it a great honour and privilege to be able to do so.
                 I look forward to being part of this pathway in your life!
-
             </p>
 
         </div>
@@ -293,20 +324,24 @@
         </div>
 
     </footer>
-<script>
 
-function toggleMenu() {
+    <!-- =========================
+         MOBILE MENU SCRIPT
+    ========================== -->
 
-    document
-        .querySelector('.main-nav')
-        .classList
-        .toggle('active');
+    <script>
 
-}
+        function toggleMenu() {
 
-</script>
+            document
+                .querySelector('.main-nav')
+                .classList
+                .toggle('active');
 
-</body>
+        }
+
+    </script>
+
 </body>
 
 </html>

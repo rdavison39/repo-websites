@@ -208,6 +208,12 @@ nav ul {
     transform: translateY(0);
 }
 
+/* MOBILE ONLY LINKS */
+
+.mobile-only {
+    display: none;
+}
+
 nav a {
     text-decoration: none;
 
@@ -655,10 +661,9 @@ footer {
         gap: 24px;
     }
 
-    .nav-inner {
-        flex-direction: column;
-        gap: 24px;
-    }
+    .brand-area {
+    margin-bottom: 10px;
+}
 
     .header-right {
         flex-wrap: wrap;
@@ -1654,21 +1659,33 @@ footer {
 
     /* NAV BAR */
 
-    .nav-inner {
-        position: relative;
+.nav-inner {
 
-        flex-direction: row;
+    position: relative;
 
-        justify-content: space-between;
+    display: flex;
 
-        align-items: center;
-    }
+    justify-content: flex-end;
+
+    align-items: flex-start;
+
+    min-height: 40px;
+}
 
     /* HAMBURGER SHOWS */
 
-    .hamburger {
-        display: flex;
-    }
+.hamburger {
+
+    display: flex;
+
+    position: absolute;
+
+    top: -138px;
+
+    right: 0;
+
+    z-index: 2000;
+}
 
     /* HIDE EMAIL + SOCIALS */
 
@@ -1680,7 +1697,7 @@ footer {
 
     .main-nav {
         position: absolute;
-
+        box-shadow: 0 10px 30px rgba(0,0,0,0.08);
         top: 70px;
 
         left: 0;
@@ -1732,28 +1749,13 @@ footer {
 
         /* MOBILE DROPDOWN */
 
-    .dropdown-menu {
 
-        position: static;
-
+    .desktop-dropdown {
         display: none;
-
-        opacity: 1;
-
-        visibility: visible;
-
-        transform: none;
-
-        box-shadow: none;
-
-        background: transparent;
-
-        padding: 10px 0 0 0;
     }
 
-    .dropdown.active .dropdown-menu {
-
-        display: flex;
+    .mobile-only {
+        display: block;
     }
 }
 /* =========================
