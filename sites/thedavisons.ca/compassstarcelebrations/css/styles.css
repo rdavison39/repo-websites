@@ -1872,3 +1872,145 @@ footer {
     }
 
 }
+
+/* ========================================
+   FAQ PAGE
+======================================== */
+
+.faq-title-section {
+    text-align: center;
+
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.faq-title-section h2 {
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 3.8rem;
+
+    font-weight: 500;
+
+    color: #efaaa5;
+}
+
+/* GRID */
+
+.faq-grid-section {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+}
+
+/* IMAGES */
+
+.faq-image img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+/* TEXT BOX */
+
+.faq-text-box {
+    background: #eca19d;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 80px;
+}
+
+/* CONTENT */
+
+.faq-content {
+    max-width: 420px;
+}
+
+.faq-content h3 {
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 2.3rem;
+
+    color: white;
+
+    margin-bottom: 28px;
+}
+
+.faq-content p {
+    font-size: 1rem;
+
+    line-height: 2;
+
+    color: white;
+
+    margin-bottom: 22px;
+}
+
+/* LINK */
+
+.faq-link {
+    color: white;
+
+    text-decoration: underline;
+
+    font-size: 1rem;
+}
+
+/* CTA */
+
+.faq-cta-section {
+    text-align: center;
+
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+/* ========================================
+   FAQ RESPONSIVE
+======================================== */
+
+@media(max-width: 900px) {
+
+    .faq-grid-section {
+        grid-template-columns: 1fr;
+    }
+
+    .faq-text-box {
+        padding: 60px 35px;
+    }
+
+    .faq-title-section h2 {
+        font-size: 3rem;
+    }
+}
+
+@media(max-width: 600px) {
+
+    .faq-title-section {
+        padding-top: 45px;
+        padding-bottom: 30px;
+    }
+
+    .faq-title-section h2 {
+        font-size: 2.3rem;
+    }
+
+    .faq-content h3 {
+        font-size: 1.9rem;
+    }
+
+    .faq-content p {
+        font-size: 0.95rem;
+
+        line-height: 1.8;
+    }
+
+}
