@@ -139,6 +139,74 @@ nav ul {
 
     gap: 28px;
 }
+/* ========================================
+   DROPDOWN MENU
+======================================== */
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 0;
+
+    position: absolute;
+
+    top: 100%;
+
+    left: 0;
+
+    min-width: 240px;
+
+    background: #f5f5f5;
+
+    list-style: none;
+
+    padding: 14px 0;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transform: translateY(10px);
+
+    transition: all 0.25s ease;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+
+    z-index: 999;
+}
+
+.dropdown-menu li {
+    width: 100%;
+}
+
+.dropdown-menu li a {
+
+    display: block;
+
+    width: 100%;
+
+    padding: 12px 24px;
+
+    white-space: nowrap;
+}
+
+.dropdown:hover .dropdown-menu {
+
+    opacity: 1;
+
+    visibility: visible;
+
+    transform: translateY(0);
+}
 
 nav a {
     text-decoration: none;
@@ -1661,4 +1729,146 @@ footer {
     nav ul {
         flex-wrap: nowrap;
     }
+
+        /* MOBILE DROPDOWN */
+
+    .dropdown-menu {
+
+        position: static;
+
+        display: none;
+
+        opacity: 1;
+
+        visibility: visible;
+
+        transform: none;
+
+        box-shadow: none;
+
+        background: transparent;
+
+        padding: 10px 0 0 0;
+    }
+
+    .dropdown.active .dropdown-menu {
+
+        display: flex;
+    }
+}
+/* =========================
+   HUMANIST CEREMONIES PAGE
+========================= */
+
+.humanist-section {
+    padding: 70px 0;
+    background: #f8f8f8;
+}
+
+.humanist-container {
+    width: 92%;
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    gap: 70px;
+    align-items: flex-start;
+}
+
+.humanist-left {
+    width: 38%;
+}
+
+.humanist-right {
+    width: 62%;
+}
+
+.humanist-right img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.humanist-left h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 64px;
+    line-height: 1.05;
+    font-weight: 400;
+    color: #e7a29b;
+    margin-bottom: 20px;
+}
+
+.humanist-source {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    margin-bottom: 50px;
+    color: #444;
+}
+
+.fact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 22px;
+    margin-bottom: 42px;
+}
+
+.fact-star {
+    color: #f2a9a2;
+    font-size: 38px;
+    line-height: 1;
+    margin-top: -6px;
+    flex-shrink: 0;
+}
+
+.fact-item p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1.9;
+    color: #333;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1100px) {
+
+    .humanist-container {
+        flex-direction: column;
+    }
+
+    .humanist-left,
+    .humanist-right {
+        width: 100%;
+    }
+
+    .humanist-left h2 {
+        font-size: 48px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .humanist-section {
+        padding: 40px 0;
+    }
+
+    .humanist-left h2 {
+        font-size: 38px;
+    }
+
+    .fact-item {
+        gap: 16px;
+        margin-bottom: 30px;
+    }
+
+    .fact-star {
+        font-size: 28px;
+    }
+
+    .fact-item p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
 }
