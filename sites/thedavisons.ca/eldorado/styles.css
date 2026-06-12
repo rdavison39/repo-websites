@@ -1,0 +1,20 @@
+
+body{margin:0;font-family:Arial,sans-serif;color:#222;line-height:1.6}
+.hero{height:100vh;background:url('assets/images/front1.jpg') center/cover}
+.overlay{background:rgba(0,0,0,.4);height:100%}
+nav{display:flex;justify-content:space-between;padding:25px 50px}
+nav a,.logo{color:#fff;text-decoration:none;margin-left:15px}
+.logo{font-weight:bold;font-size:1.4rem}
+.hero-content{padding:25vh 10%;color:#fff;max-width:800px}
+.hero-content h1{font-size:4rem}
+.btn{background:#0d6e8a;color:#fff;padding:14px 24px;border-radius:6px;text-decoration:none}
+section{padding:80px 10%}
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.card img{width:100%;border-radius:10px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.grid div,.card{background:#f5f7f8;padding:15px;border-radius:10px}
+.gallery{columns:4 250px;column-gap:14px}
+.gallery img{width:100%;margin-bottom:14px;border-radius:8px}
+.booking{text-align:center;background:#f5f7f8}
+footer{text-align:center;padding:30px}
+@media(max-width:768px){.hero-content h1{font-size:2.5rem}nav{flex-direction:column}}
