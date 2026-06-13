@@ -1,0 +1,31 @@
+
+body{margin:0;font-family:Inter,sans-serif;color:#222}
+h1,h2,h3,.logo{font-family:'Playfair Display',serif}
+.hero{height:100vh;background:url('assets/images/front1.jpg') center/cover no-repeat}
+.hero-overlay{background:rgba(0,0,0,.35);height:100%}
+nav{display:flex;justify-content:space-between;padding:24px 5%}
+.logo,.nav-links a{color:white;text-decoration:none}
+.nav-links a{margin-left:18px}
+.book-btn,.cta{background:#0e6e8f;color:#fff;padding:12px 20px;border-radius:6px;text-decoration:none}
+.hero-content{color:white;padding:20vh 8%;max-width:800px}
+.hero-content h1{font-size:4rem}
+.stats{display:grid;grid-template-columns:repeat(5,1fr);background:#232629;color:#fff;text-align:center;padding:25px}
+.stats strong{display:block;font-size:2rem}
+section{padding:70px 8%}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px}
+.card,.review{background:#f5f7f8;border-radius:12px;padding:18px}
+.card img{width:100%;border-radius:10px}
+.reviews{background:#fafafa}
+.lake-life{background:url('assets/images/dock.png') center/cover;color:white;text-align:center;padding:120px 8%}
+.gallery{columns:4 250px;column-gap:14px}
+.gallery img{width:100%;margin-bottom:14px;border-radius:10px}
+.location{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.location iframe{width:100%;height:450px;border:0}
+.booking{text-align:center;background:#f5f7f8}
+footer{text-align:center;padding:30px}
+@media(max-width:800px){
+.hero-content h1{font-size:2.5rem}
+.stats{grid-template-columns:repeat(2,1fr)}
+.location{grid-template-columns:1fr}
+nav{flex-direction:column}
+}
