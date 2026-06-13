@@ -12,15 +12,15 @@
 <body>
 
 <nav class="topnav">
-  <div class="logo">ELDORADO</div>
-  <div class="navlinks">
-    <a href="#overview">Overview</a>
-    <a href="#reviews">Reviews</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#location">Location</a>
-    <a href="review.html">Leave Review</a>
-    <a class="book-btn" href="https://jaynescottages.com/vacation-rentals/el-dorado/">Book Now</a>
-  </div>
+<div class="logo">ELDORADO</div>
+<div class="navlinks">
+<a href="#overview">Overview</a>
+<a href="#reviews">Reviews</a>
+<a href="#gallery">Gallery</a>
+<a href="#location">Location</a>
+<a href="review.html">Leave Review</a>
+<a class="book-btn" href="https://jaynescottages.com/vacation-rentals/el-dorado/">Book Now</a>
+</div>
 </nav>
 
 <a class="sticky-book" href="https://jaynescottages.com/vacation-rentals/el-dorado/">Book Now</a>
@@ -47,25 +47,56 @@
 
 <section id="overview">
 <h2>Why Guests Love ELDORADO</h2>
-</section>
-
-<section id="reviews" class="reviews">
-<h2>Guest Reviews</h2>
 <div class="review-grid">
-<div class="review-card"><div class="stars">★★★★★</div><p>The property was stunning and looked even better than the pictures shown. The house was in excellent condition and accommodated a big group very easily.</p><strong>Susan</strong></div>
-<div class="review-card"><div class="stars">★★★★★</div><p>The cottage was lovely. High end. Spacious. Comfortable. Beautiful swimming waterfront areas.</p><strong>Derek</strong></div>
-<div class="review-card"><div class="stars">★★★★★</div><p>The house pictures don't do it justice. The views are breathtaking. Everything was top notch.</p><strong>Tiffany</strong></div>
-<div class="review-card"><div class="stars">★★★★★</div><p>The location on a point on the north end of the lake was spectacular.</p><strong>Jim</strong></div>
+<div class="review-card">
+<img src="assets/images/dock.png" alt="Waterfront Living" class="card-image">
+<h3>Waterfront Living</h3>
+<p>Enjoy 280 feet of private shoreline, deep-water swimming, a floating swim platform, dive tower and spectacular views across Three Mile Lake.</p>
+</div>
+<div class="review-card">
+<img src="assets/images/pickball1.png" alt="Sports" class="card-image">
+<h3>Sports & Recreation</h3>
+<p>Private pickleball court, basketball net, golf practice range, canoe, kayaks and SUPs provide fun for all ages.</p>
+</div>
+<div class="review-card">
+<img src="assets/images/living.png" alt="Gather Together" class="card-image">
+<h3>Gather Together</h3>
+<p>Eight bedrooms, five bathrooms and spacious gathering areas make ELDORADO ideal for family reunions and group getaways.</p>
+</div>
 </div>
 </section>
 
+
+<section id="reviews">
+<h2>Guest Reviews</h2>
+<p><strong>★★★★★ 5.0 Average Rating</strong> · 8 Verified Guest Reviews</p>
+
+<div class="review-grid">
+<div class="review-card"><div class="stars">★★★★★</div><p>The property was stunning and looked even better than the pictures shown. The house was in excellent condition and accommodated a big group very easily.</p><strong>Susan · 09/2024</strong></div>
+<div class="review-card"><div class="stars">★★★★★</div><p>The cottage was lovely. High end. Spacious. Comfortable. Beautiful swimming waterfront areas.</p><strong>Derek · 08/2024</strong></div>
+<div class="review-card"><div class="stars">★★★★★</div><p>The house pictures don't do it justice. The views are breathtaking. Everything was top notch.</p><strong>Tiffany · 10/2023</strong></div>
+<div class="review-card"><div class="stars">★★★★★</div><p>The location on a point on the north end of the lake was spectacular.</p><strong>Jim · 10/2023</strong></div>
+</div>
+
+<div id="moreReviews" style="display:none;">
+<div class="review-grid">
+<div class="review-card"><div class="stars">★★★★★</div><p>The cottage was lovely, clean and was well appointed. Nice bedding and linens, and nicely decorated.</p><strong>Michon · 10/2022</strong></div>
+<div class="review-card"><div class="stars">★★★★★</div><p>It was a beautiful stay and everyone enjoyed themselves. The cottage was even more amazing in person.</p><strong>Alana · 06/2022</strong></div>
+<div class="review-card"><div class="stars">★★★★★</div><p>We loved this cottage and location. We would love to rent it again for our family. No improvements needed.</p><strong>Jennifer · 07/2021</strong></div>
+<div class="review-card"><div class="stars">★★★★★</div><p>There was nothing more that we could suggest about the cottage as it was perfect.</p><strong>Greg · 06/2021</strong></div>
+</div>
+</div>
+<p style="text-align:center"><button class="cta" onclick="toggleReviews()" id="reviewBtn">View All Reviews</button></p>
+</section>
+
+
 <section class="feature-image">
 <h2>Life on the Lake</h2>
-<p>Deep water swimming, floating raft, dive tower and spectacular lake views.</p>
+<p>Spend your days swimming, paddling, boating and relaxing on one of the most desirable waterfront properties on Three Mile Lake. Enjoy a floating swim platform, dive tower, waterfront fire pit and all-day sun from the dock.</p>
 </section>
 
 <section id="gallery">
-<h2>Gallery</h2>
+<h2>Gallery</h2><p><em>Click any image to enlarge.</em></p>
 
 <h3>Waterfront</h3>
 <div class="gallery-grid">
@@ -96,12 +127,64 @@
 <div class="gallery-grid">
 <img src="assets/images/bathroom.png"><img src="assets/images/bathroom_1.png"><img src="assets/images/bathroom_2.png">
 </div>
-
 </section>
 
 <section id="location" class="location">
-<div><h2>Three Mile Lake</h2><p>Quiet bay, south-east exposure, minimal boat traffic.</p></div>
+<div>
+<h2>Three Mile Lake</h2>
+<p>Situated on the quiet north end of Three Mile Lake with south-east exposure and minimal boat traffic.</p>
+</div>
 <iframe src="https://www.google.com/maps?q=45.19942321090197,-79.47503950200257&z=13&output=embed"></iframe>
 </section>
 
-</body></html>
+<script>
+function toggleReviews(){
+ const e=document.getElementById('moreReviews');
+ const b=document.getElementById('reviewBtn');
+ if(e.style.display==='none'){e.style.display='block';b.innerText='Show Fewer Reviews';}
+ else{e.style.display='none';b.innerText='View All Reviews';}
+}
+</script>
+
+<div id="lightbox" class="lightbox">
+<span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+<span class="lightbox-prev" onclick="changeImg(-1)">&#10094;</span>
+<img id="lightboxImg">
+<span class="lightbox-next" onclick="changeImg(1)">&#10095;</span>
+</div>
+
+<script>
+let galleryImages=[];
+let currentIndex=0;
+
+document.addEventListener('DOMContentLoaded',()=>{
+ galleryImages=[...document.querySelectorAll('.gallery-grid img')];
+ galleryImages.forEach((img,i)=>{
+   img.addEventListener('click',()=>openLightbox(i));
+ });
+ document.addEventListener('keydown',(e)=>{
+   if(e.key==='Escape') closeLightbox();
+   if(e.key==='ArrowLeft') changeImg(-1);
+   if(e.key==='ArrowRight') changeImg(1);
+ });
+});
+
+function openLightbox(i){
+ currentIndex=i;
+ document.getElementById('lightboxImg').src=galleryImages[i].src;
+ document.getElementById('lightbox').style.display='flex';
+}
+
+function closeLightbox(){
+ document.getElementById('lightbox').style.display='none';
+}
+
+function changeImg(dir){
+ if(document.getElementById('lightbox').style.display!=='flex') return;
+ currentIndex=(currentIndex+dir+galleryImages.length)%galleryImages.length;
+ document.getElementById('lightboxImg').src=galleryImages[currentIndex].src;
+}
+</script>
+</body>
+
+</html>
