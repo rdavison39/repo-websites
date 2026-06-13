@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Amenities - ELDORADO</title>
+<meta name="description" content="Full list of amenities at ELDORADO, a luxury waterfront retreat on Three Mile Lake.">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="amenities-page">
+<nav class="topnav" aria-label="Main navigation">
+  <div class="logo">ELDORADO</div>
+  <button id="navToggle" class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+  <div class="navlinks">
+    <a href="index.html#details">Details</a>
+    <a href="index.html#overview">Overview</a>
+    <a href="amenities.html">Amenities</a>
+    <a href="index.html#reviews">Reviews</a>
+    <a href="index.html#gallery">Gallery</a>
+    <a href="index.html#location">Location</a>
+    <a href="review.html" target="_blank" rel="noopener">Leave Review</a>
+    <a class="book-btn" href="https://jaynescottages.com/vacation-rentals/el-dorado/">Book Now</a>
+  </div>
+</nav>
+
+<main style="max-width:900px;margin:40px auto;padding:20px;">
+<h1>Amenities at ELDORADO</h1>
+<p>ELDORADO is equipped for comfort, recreation and convenience. Below is a full list of amenities.</p>
+
+<h2>Features</h2>
+<ul>
+  <li>Air Conditioning</li>
+  <li>Central Heat</li>
+  <li>High‑Speed Wi‑Fi</li>
+  <li>Smart TVs</li>
+  <li>Washer & Dryer</li>
+  <li>Linens & Towels Provided</li>
+  <li>Parking for 6 cars</li>
+  <li>Manual Generator (on property)</li>
+</ul>
+
+<h2>Kitchen</h2>
+<ul>
+  <li>High-end stainless steel appliances</li>
+  <li>Double-sided fridge</li>
+  <li>Dishwasher</li>
+  <li>Coffee maker (drip)</li>
+  <li>Microwave, Oven, Stove, Toaster</li>
+  <li>Cookware, dishes & utensils</li>
+</ul>
+
+<h2>Entertainment</h2>
+<ul>
+  <li>Ping-Pong / Pool table</li>
+  <li>Darts board</li>
+  <li>Books & Games</li>
+  <li>Television(s)</li>
+</ul>
+
+<h2>Outdoor & Waterfront</h2>
+<ul>
+  <li>280' Private waterfront</li>
+  <li>Dock with deep-water access & Sea-Doo slip</li>
+  <li>Floating swim platform</li>
+  <li>20ft Dive Tower</li>
+  <li>Canoe, Kayaks (2 adult, 1 kids), SUPs, Floating Raft</li>
+  <li>Fire pit with seating (6 Muskoka chairs)</li>
+  <li>Gas grill, Large deck, Multiple outdoor seating areas</li>
+</ul>
+
+<h2>Sports & Recreation</h2>
+<ul>
+  <li>Private sports court (Pickleball & Basketball)</li>
+  <li>Golf practice area</li>
+  <li>Swimming, Fishing, Biking, Hiking</li>
+</ul>
+
+<h2>Safety & Services</h2>
+<ul>
+  <li>Smoke & Carbon Monoxide Detectors</li>
+  <li>Fire Extinguisher & First Aid Kit</li>
+  <li>Outdoor Lighting</li>
+  <li>Housekeeping options / midweek housekeeping during peak season</li>
+</ul>
+
+<p style="margin-top:30px;"><a class="cta" href="index.html">Return to Home Page</a></p>
+</main>
+
+<script>
+document.addEventListener('DOMContentLoaded',()=>{
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.querySelector('.navlinks');
+  if(navToggle && navLinks){
+    navToggle.addEventListener('click', ()=>{
+      const open = navLinks.classList.toggle('open');
+      navToggle.setAttribute('aria-expanded', open);
+    });
+  }
+});
+</script>
+
+</body>
+</html>

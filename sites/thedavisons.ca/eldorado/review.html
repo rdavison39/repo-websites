@@ -4,32 +4,51 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Leave a Review - ELDORADO</title>
+<meta name="description" content="Leave a review for ELDORADO — 8 bedroom waterfront cottage on Three Mile Lake.">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<section style="max-width:800px;margin:auto;text-align:center;">
-<h1>Thank You For Staying At ELDORADO</h1>
-<p style="font-size:1.2rem;">
-Enjoying your stay?
-</p>
-<p>
-As a thank you, please leave us a review and enjoy the complimentary bottle of wine.
-Your feedback helps future guests discover ELDORADO.
-</p>
+<nav class="topnav" aria-label="Main navigation">
+	<div class="logo">ELDORADO</div>
+	<button id="navToggle" class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+	<div class="navlinks">
+		<a href="index.html#details">Details</a>
+		<a href="index.html#overview">Overview</a>
+		<a href="amenities.html">Amenities</a>
+		<a href="index.html#reviews">Reviews</a>
+		<a href="index.html#gallery">Gallery</a>
+		<a href="index.html#location">Location</a>
+		<a href="review.html" target="_blank" rel="noopener">Leave Review</a>
+		<a class="book-btn" href="https://jaynescottages.com/vacation-rentals/el-dorado/">Book Now</a>
+	</div>
+</nav>
 
-<img src="eldorado_review_qr.png" alt="Review QR Code" style="max-width:320px;width:100%;">
+<section style="max-width:800px;margin:auto;text-align:center;padding:60px 20px;">
+<h1>Thank You For Staying At ELDORADO</h1>
+<p style="font-size:1.2rem;">Enjoying your stay?</p>
+<p>As a thank you, please leave us a review and enjoy the complimentary bottle of wine. Your feedback helps future guests discover ELDORADO.</p>
+
+<img src="eldorado_review_qr.png" alt="QR code linking to the El Dorado review form" style="max-width:320px;width:100%;" loading="lazy">
 
 <p style="margin-top:30px;">
-<a class="cta" href="https://forms.gle/ahcoYpDKqDbN2iV86" target="_blank">Leave a Review</a>
+	<a class="cta" href="https://forms.gle/ahcoYpDKqDbN2iV86" target="_blank" rel="noopener">Leave a Review</a>
 </p>
 
-<p style="margin-top:20px;">
-Or scan the QR code with your phone.
-</p>
+<p style="margin-top:20px;">Or scan the QR code with your phone.</p>
 
-<p>
-<a href="index.html">Return to Home Page</a>
-</p>
+<p><a href="index.html" class="cta">Return to Home Page</a></p>
 </section>
+<script>
+document.addEventListener('DOMContentLoaded',()=>{
+	const navToggle = document.getElementById('navToggle');
+	const navLinks = document.querySelector('.navlinks');
+	if(navToggle && navLinks){
+		navToggle.addEventListener('click', ()=>{
+			const open = navLinks.classList.toggle('open');
+			navToggle.setAttribute('aria-expanded', open);
+		});
+	}
+});
+</script>
 </body>
 </html>

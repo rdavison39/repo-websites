@@ -36,6 +36,12 @@ h3,
     font-weight: 500
 }
 
+/* Focus styles for accessibility */
+a:focus-visible, button:focus-visible {
+    outline: 3px solid #0e6e8f;
+    outline-offset: 2px;
+}
+
 .hero {
     height: 100vh;
     background: url('assets/images/front1.jpg') center/cover
@@ -213,26 +219,146 @@ section {
 .lightbox-next {
     position: absolute;
     color: #fff;
-    font-size: 42px;
+    font-size: 32px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.55);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
     cursor: pointer;
-    user-select: none
+    user-select: none;
+    opacity: 0.96;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    z-index: 10002;
 }
 
 .lightbox-close {
     top: 20px;
-    right: 30px
+    right: 30px;
+    font-size: 28px;
 }
 
-.lightbox-prev {
-    left: 20px;
-    top: 50%
-}
-
+.lightbox-prev,
 .lightbox-next {
-    right: 20px;
-    top: 50%
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.lightbox-prev { left: 24px; }
+.lightbox-next { right: 24px; }
+
+.lightbox-prev:hover,
+.lightbox-next:hover {
+    opacity: 1;
+    transform: translateY(-50%) scale(1.05);
 }
 
 .gallery-grid img {
-    cursor: pointer
+    cursor: pointer;
+}
+
+/* Improve image layout and performance */
+.gallery-grid img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Responsive nav: show toggle on small screens */
+.nav-toggle{
+    display:none;
+    background:transparent;
+    border:0;
+    font-size:1.6rem;
+    cursor:pointer;
+}
+
+@media(max-width:800px){
+    .nav-toggle{ display:block; }
+    .navlinks{ display:none; width:100%; flex-direction:column; gap:10px; margin-top:10px }
+    .navlinks.open{ display:flex; }
+    .navlinks a{ margin-left:0; padding:8px 12px }
+}
+
+/* Amenities and details section styling: boxed cards and matching font */
+#amenities,
+.amenities-page main,
+#details {
+    display: block;
+    background: #fff;
+    border: 1px solid #222; /* thin dark border like Jayne's site */
+    border-radius: 8px;
+    padding: 28px;
+    box-shadow: none; /* remove heavy shadow for cleaner boxed look */
+    font-family: 'Montserrat', Arial, sans-serif;
+    color: #222;
+    margin: 0 auto 24px;
+    max-width: 1200px;
+    box-sizing: border-box;
+}
+#amenities {
+    margin-top: 16px;
+}
+
+#amenities h2,
+#details h2,
+.amenities-page main h1 {
+    margin-top: 0;
+    font-weight: 600;
+    font-size: 2.1rem;
+    letter-spacing: -0.02em;
+    margin-bottom: 1rem;
+}
+
+#amenities ul,
+.amenities-page main ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    list-style: none;
+    padding: 0;
+    margin: 12px 0 24px 0;
+}
+
+#amenities ul li,
+.amenities-page main ul li {
+    padding: 10px 14px;
+    border-radius: 12px;
+    border: 1px solid #efe9e3;
+    background: #fff;
+    min-width: 140px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: #333;
+    font-weight: 500;
+}
+
+#amenities ul li:before,
+.amenities-page main ul li:before {
+    content: '\2713';
+    display: inline-flex;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 1px solid #e6d9c6;
+    align-items: center;
+    justify-content: center;
+    margin-right: 6px;
+    color: #c59b5a;
+    font-size: 12px;
+    background: #fff;
+}
+
+/* Small link in the amenities header */
+.amenities-full a { font-size: 0.95rem; color: #0e6e8f; text-decoration: none; border-bottom: 1px solid rgba(14,110,143,0.15); padding-bottom:2px }
+
+@media (max-width:800px){
+    #amenities ul, .amenities-page main ul{ gap:10px }
+    #amenities ul li, .amenities-page main ul li{ min-width: 45%; }
 }
