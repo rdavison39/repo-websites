@@ -172,7 +172,27 @@ section {
 
 @media(max-width:800px) {
     .stats {
-        grid-template-columns: repeat(2, 1fr)
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+        padding: 18px;
+    }
+
+    .stats div {
+        padding: 14px 8px;
+    }
+
+    .stats div:last-child {
+        grid-column: 1 / -1;
+    }
+
+    .stats strong {
+        font-size: 1.8rem;
+    }
+
+    .stats div:last-child span {
+        display: block;
+        margin-top: 6px;
+        font-size: 0.95rem;
     }
 
     .location {
