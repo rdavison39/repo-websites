@@ -73,14 +73,16 @@ jobs:
               if aws s3api head-bucket --bucket "$BUCKET" 2>/dev/null; then
                 echo "Deploying to s3://$BUCKET"
 
-                # Static assets
+                # Sync static assets and remove stale non-HTML files.
                 aws s3 sync "$site_path" "s3://$BUCKET" \
                   --delete \
                   --exclude "*.html" \
                   --cache-control "public,max-age=31536000"
 
-                # HTML files
+                # Sync HTML files and remove stale HTML pages.
+                # Filters limit this sync, including deletions, to HTML files.
                 aws s3 sync "$site_path" "s3://$BUCKET" \
+                  --delete \
                   --exclude "*" \
                   --include "*.html" \
                   --cache-control "no-cache"
